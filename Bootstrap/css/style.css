@@ -1,0 +1,17 @@
+@font-face{
+	src: url('../fonts/SuperbaBold_Roman.ttf');
+	font-family: 'super';
+}
+
+.col_bg{
+	color: yellow;
+	font-family: 'super';
+}
+.row_bg{
+	color: black;
+}
+
+.bg_color{
+	background-image: url('../images/background.png');
+}
+
