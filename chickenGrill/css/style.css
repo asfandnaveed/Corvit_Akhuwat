@@ -1,0 +1,17 @@
+.header_bg{
+	background-image: url('../images/header.png');
+	background-size: 100%;
+}
+.header_bg_right{
+	background-color: #303030;
+}
+.header_right_bg{
+	background-image: url('../images/title_background.png');
+	background-size: 80%;
+}
+.menu{
+	height: 50px;
+}
+.test{
+	height: 650px;
+}
