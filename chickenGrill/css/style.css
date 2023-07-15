@@ -1,3 +1,7 @@
+@font-face{
+	src: url('../fonts/GrandHotel-Regular.otf');
+	font-family: 'grand';
+}
 .header_bg{
 	background-image: url('../images/header.png');
 	background-size: 100%;
@@ -7,11 +11,26 @@
 }
 .header_right_bg{
 	background-image: url('../images/title_background.png');
+	height: 600px;
 	background-size: 80%;
+
 }
 .menu{
 	height: 50px;
 }
 .test{
-	height: 650px;
+	height: 600px;
 }
+.header_title{
+	color: #F6C443;
+	font-family: 'grand';
+}
+
+
+
+
+
+
+
+
+
