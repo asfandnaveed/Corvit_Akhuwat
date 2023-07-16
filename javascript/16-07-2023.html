@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JavaScript</title>
+</head>
+<body>
+
+	<h1 id="txt">Hello</h1>
+
+
+	<br>
+	<img id="img1" src="images/BurgerImage1.png">
+
+
+	<button onclick="changeThings();">Change all</button>
+
+
+
+	<script type="text/javascript">
+		
+		function changeThings(){
+
+			var x=8;
+			var y =10;
+
+			document.getElementById('txt').innerHTML = x+y;
+			document.getElementById('img1').src='images/BurgerImage2.png';
+			document.getElementById('txt').style.color='green';
+		}
+
+
+	</script>
+
+</body>
+</html>
