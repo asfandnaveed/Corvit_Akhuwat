@@ -1,5 +1,6 @@
 @font-face{
-
+	src: url('../fonts/DimorInlineA.ttf');
+	font-family: 'Dimor';
 }
 .bg_header{
 	background-image: url('../images/BackgroundImage.png');
@@ -10,4 +11,8 @@
 }
 .nav_button{
 	background-color: #b09165;
+}
+.font_class{
+	font-family:'Dimor' ;
+	color: #b09165;
 }
