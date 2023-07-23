@@ -1,0 +1,13 @@
+@font-face{
+
+}
+.bg_header{
+	background-image: url('../images/BackgroundImage.png');
+
+}
+.nav_text{
+	color: #b09165;
+}
+.nav_button{
+	background-color: #b09165;
+}
