@@ -2,9 +2,9 @@
 session_start();
 
 $serverAddress = 'localhost';
-$username = 'root';
-$password = '';
-$dbName = 'food';
+$username = 'u600561363_food';
+$password = 'W3s$j[4KZX^|';
+$dbName = 'u600561363_food';
 
 $con = new mysqli($serverAddress,$username,$password,$dbName);
 
