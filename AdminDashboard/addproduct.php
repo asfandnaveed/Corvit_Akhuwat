@@ -11,10 +11,17 @@ if( isset($_SESSION['login']) ){
         $productStock = $_POST['stock'];
         $productDescription = $_POST['description'];
         
-        $fileName = $_FILE['image']['name'];
-        $fileSize = $_FILE['image']['size'];
-        $fileType = $_FILE['image']['type'];
-        $fileData = $_FILE['image']['tmp_name'];
+        $fileName = $_FILES['image']['name'];
+        $fileSize = $_FILES['image']['size'];
+        $fileType = $_FILES['image']['type'];
+        $fileData = $_FILES['image']['tmp_name'];
+        
+        
+        if($fileType == 'image/jpg' || $fileType == 'image/png' || $fileType == 'image/jpeg'){
+            
+            move_uploaded_file($fileData , 'images/'.$fileName);
+        }
+        
     }
     
 }else{
