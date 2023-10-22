@@ -24,7 +24,7 @@ if( isset($_SESSION['login']) ){
       
       
     <div class="py-4">
-        <button class="btn btn-success btn-lg w-50">Add Product</button>
+        <a class="btn btn-success btn-lg w-50" href="addproduct.php">Add Product</a>
     </div>
       
       
@@ -58,14 +58,14 @@ if( isset($_SESSION['login']) ){
             while($row =  $result-> fetch_assoc() ){
                 
                 echo '<tr>
-                        <th>1</th>
+                        <td>1</td>
                         <td>
                             <img src="'.$row['p_image'].'" class="img-fluid w-25">
                         </td>
                         <td>'.$row['p_name'].'</td>
                         <td>'.$row['p_price'].'</td>
-                        <td>15</td>
-                        <td>Cocomo Mujhe bhi do</td>
+                        <td>'.$row['p_stock'].'</td>
+                        <td>'.$row['p_description'].'</td>
                         <td>
                             <button class="btn btn-info">Edit</button>
                         </td>
