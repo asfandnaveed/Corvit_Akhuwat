@@ -2,6 +2,14 @@
 
 session_start();
 
+ $serverAddress = 'localhost';
+$username = 'u600561363_food';
+$password = 'W3s$j[4KZX^|';
+$dbName = 'u600561363_food';
+
+$con = new mysqli($serverAddress,$username,$password,$dbName);
+
+
 if( isset($_SESSION['login']) ){
     
     
@@ -16,10 +24,22 @@ if( isset($_SESSION['login']) ){
         $fileType = $_FILES['image']['type'];
         $fileData = $_FILES['image']['tmp_name'];
         
+        $t = time();
         
         if($fileType == 'image/jpg' || $fileType == 'image/png' || $fileType == 'image/jpeg'){
             
-            move_uploaded_file($fileData , 'images/'.$fileName);
+            
+            move_uploaded_file($fileData , 'images/'.$t.$fileName);
+            
+            $imagePath = 'images/'.$t.$fileName;
+            
+            $dateTime = date('Y-m-d H:m:s');
+            
+            $sql = "INSERT INTO products (p_name,p_price,p_description,p_stock,p_image,created_at) VALUES ('$productName','$productPrice','$productDescription','$productStock','$imagePath','$dateTime')";
+            
+            if($con->query($sql) ==TRUE){
+                echo 'Product Inserted !';
+            }
         }
         
     }
