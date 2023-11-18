@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Animated Button</title>
+</head>
+<body>
+
+<button id="btn" style="width:100px;height: 55px;position:absolute;">Click If You Can</button>
+
+
+<script type="text/javascript" src="jquery/jquery-3.7.1.js"></script>
+
+<script type="text/javascript">
+	
+	$('#btn').mouseenter(function(){
+
+		var x = Math.random() * 85;
+		var y = Math.random() * 85;
+
+		$('#btn').animate({
+			right: x+'%',
+			bottom: y+'%',
+		});
+	});
+
+</script>
+
+</body>
+</html>
