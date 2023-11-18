@@ -11,7 +11,7 @@
 <div id="txt" class="jtext">Hello Corvit</div>
 <button id="btn">Change Text</button>
 
-<div id="box" style="width:200px;height: 200px;background-color:magenta ;"></div>
+<div id="box" style="width:200px;height: 200px;position:absolute ;background-color:magenta ;"></div>
 
 
 <script type="text/javascript" src="jquery/jquery-3.7.1.js"></script>
@@ -38,21 +38,14 @@
 		$('#box').animate({
 			height:'400px',
 			width: '350px',
+			right: '0px',
+			bottom: '0px',
 
 		});
 
 	});
 
-	$('#box').mouseleave(function(){
-
-		$('#box').animate({
-			height:'200px',
-			width: '200px',
-
-		});
-
-	});
-
+	
 
 
 </script>
