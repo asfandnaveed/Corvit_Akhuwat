@@ -7,40 +7,60 @@
 </head>
 <body>
 
-<button id="btn" style="width:100px;height: 55px;position:absolute;">Click If You Can</button>
+	<label>Email</label>
+	<input id="input1" type="email">
+
+	<br>
+
+	<label>Password</label>
+	<input id="input2" type="password">
+
+	<br>
+
+	<button id="btn" style="width:100px;height: 55px;position:absolute;">LOGIN</button>
 
 
 
-<button onclick="value1();">Value</button>
 
 <script type="text/javascript" src="jquery/jquery-3.7.1.js"></script>
 
 <script type="text/javascript">
+
+	// Selector.action
 	
 	$('#btn').mouseenter(function(){
 
-		var x = Math.random() * 85;
-		var y = Math.random() * 85;
+		var email = $('#input1').val();
+		var password = $('#input2').val();
 
-		$('#btn').animate({
-			right: x+'%',
-			bottom: y+'%',
-		});
+		if( email=='' || password==''){
+
+			var x = Math.random() * 85;
+			var y = Math.random() * 85;
+
+			$('#btn').animate({
+				right: x+'%',
+				bottom: y+'%',
+			});
+
+		}
+
+		
 	});
 
 
-	function value1(){
+	// function value1(){
 
-		let x=10;
+	// 	let x=10;
 
-		if(x==10){
-			let x = 20;
-			console.log(x);
-		}
+	// 	if(x==10){
+	// 		let x = 20;
+	// 		console.log(x);
+	// 	}
 
-		console.log(x);
+	// 	console.log(x);
 
-	}
+	// }
 
 
 
